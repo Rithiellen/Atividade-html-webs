@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Leituras</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Minhas Leituras</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="minhas-leituras.html">Minhas Leituras</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Registre suas Leituras</h2>
+        <form>
+            <label for="titulo">Título do Livro:</label>
+            <input type="text" id="titulo" name="titulo" required>
+        
+            <label for="autor">Autor:</label>
+            <input type="text" id="autor" name="autor" required>
+        
+            <label for="inicio">Data de Início:</label>
+            <input type="date" id="inicio" name="inicio">
+        
+            <label for="fim">Data de Término:</label>
+            <input type="date" id="fim" name="fim">
+        
+            <label for="nota">Nota:</label>
+            <select id="nota" name="nota" required>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="1">⭐</option>
+            </select>
+        
+            <label for="opiniao">Sua Citação Favorita:</label>
+            <textarea id="opiniao" name="opiniao" rows="2" required></textarea>
+        
+            <button type="submit">Registrar</button>
+        </form>
+
+        <h3>Leituras Recentes</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Autor</th>
+                    <th>Data de Início</th>
+                    <th>Data de Término</th>
+                    <th>Nota</th>
+                    <th>Citação Favorita</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Trono de vidro</td>
+                    <td>Sarah J. Maas</td>
+                    <td>23/10/2024</td>
+                    <td>20/11/2024</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                    <td>"A biblioteca tinha uma alma, e estava viva."</td>
+                </tr>
+
+                <tr>
+                    <td>É assim que acaba</td>
+                    <td>Colleen Hoouver</td>
+                    <td>20/10/2024</td>
+                    <td>10/11/2024</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                    <td>“Continue a nadar.”</td>
+                </tr>
+
+                <tr>
+                    <td>Orgulho e Preconceito</td>
+                    <td>Jane Austen</td>
+                    <td>18/08/2024</td>
+                    <td>02/09/2024</td>
+                    <td>⭐⭐⭐⭐</td>
+                    <td>"É uma verdade universalmente reconhecida que um homem solteiro em posse de uma grande fortuna deve estar em busca de uma esposa."</td>
+                </tr>
+
+                <tr>
+                    <td>O Morro dos Ventos Uivantes</td>
+                    <td>Emily Brontë</td>
+                    <td>26/07/2024</td>
+                    <td>12/08/2024</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                    <td>"Ele é mais eu do que eu mesma. De qualquer coisa que nossas almas sejam feitas, a dele e a minha são iguais."</td>
+                </tr>
+
+                <tr>
+                    <td>O lado feio do amor</td>
+                    <td>Colleen Hoouver</td>
+                    <td>05/07/2024</td>
+                    <td>30/07/2024</td>
+                    <td>⭐⭐⭐⭐</td>
+                    <td>"O amor nem sempre é bonito, Tate. Às vezes, você passa por isso e apenas espera que ele valha a pena."</td>
+                </tr>
+
+                <tr>
+                    <td>Até o verão terminar</td>
+                    <td>Colleen Hoouver</td>
+                    <td>15/06/2024</td>
+                    <td>26/06/2024</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                    <td>"É estranho como um lugar pode trazer de volta sentimentos que você achava ter enterrado para sempre."</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>Meu Diário de Leitura</p>
+    </footer>
+</body>
+</html>
